@@ -19,7 +19,7 @@ async function searchRepositories() {
     for (let i = 0; i < repositories.length; i++) {
       if (list.childNodes.length == 20) {
         break;
-      } else if (repositoriesNames[i].toLowerCase().includes(name)) {
+      } else if (repositoriesNames[i].toLowerCase().includes(name.toLowerCase())) {
         let li = document.createElement('li');
         let link = document.createElement('a');
         link.setAttribute('href', repositories[i].html_url);
