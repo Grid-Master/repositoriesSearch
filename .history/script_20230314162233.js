@@ -14,9 +14,9 @@ async function searchRepositories() {
   list.innerHTML = null;
 
   if (name) {
-    err.innerText = '';
     await getRepositories();
     repositories.map((repository) => repositoriesNames.push(repository.name));
+    console.log(repositories);
     for (let i = 0; i < repositories.length; i++) {
       if (list.childNodes.length == 20) {
         break;
@@ -35,6 +35,6 @@ async function searchRepositories() {
     }
     document.getElementById('reposName').value = '';
   } else {
-    err.innerText = 'Недостаточно символов!';
+    err.innerText = 'Недостаточно символов';
   }
 }

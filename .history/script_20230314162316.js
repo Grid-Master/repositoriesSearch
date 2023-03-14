@@ -35,6 +35,6 @@ async function searchRepositories() {
     }
     document.getElementById('reposName').value = '';
   } else {
-    err.innerText = 'Недостаточно символов!';
+    err.innerText = 'Недостаточно символов';
   }
 }

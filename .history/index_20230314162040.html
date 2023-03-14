@@ -7,7 +7,7 @@
     <title>git</title>
     <style>
       body > div {
-        height: 700px;
+        height: 675px;
       }
       form {
         margin: 100px;
@@ -50,21 +50,17 @@
       h1 {
         padding-top: 30px;
       }
-
-      #err {
-        color: red;
-        margin-left: 100px;
-      }
     </style>
   </head>
   <body>
     <div>
       <form id="form" onsubmit="searchRepositories(); return false">
         <h1>Поиск репозиториев</h1>
-        <input id="reposName" type="text" placeholder="введите название репозитория" />
+        <div>
+          <input id="reposName" type="text" placeholder="введите название репозитория" />
+        </div>
         <button type="submit">Найти</button>
       </form>
-      <h4 id="err"></h4>
       <ul id="list"></ul>
     </div>
     <script src="./script.js"></script>
